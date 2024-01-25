@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  sist2:
+    image: sistupdate
+    restart: on-failure
+    volumes:
+      - /mnt/p/d/:/mnt/p/d
+    environment:
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+
+
